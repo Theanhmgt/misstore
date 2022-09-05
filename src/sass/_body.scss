@@ -1,0 +1,40 @@
+.cumstom-builds {
+
+    margin-bottom: 50px;
+    &--head {
+        padding: 0 18px;
+        height: 350px;
+        width: 100%;
+        @include media-breakpoint-down(sm) {
+            height: 82px;
+        }
+        @include flex(center, center);
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        background: url('../Images/cumstombuilds.png') center / cover no-repeat;
+        & .head--name {
+            font-size: 22px;
+            @include media-breakpoint-down(sm) {
+                font-size: 18px;
+            }
+            font-weight: 700;
+            color: #fff;
+            // margin-bottom: 90px;
+        }
+        & .link-to-all-product {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15px;
+
+            position: absolute;
+            bottom:32px;
+            @include media-breakpoint-down(sm) {
+                bottom: 15px;
+            }
+            color: #fff;
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+    }
+}

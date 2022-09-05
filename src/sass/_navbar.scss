@@ -1,0 +1,110 @@
+nav {
+    background-color: #fff !important ;
+    height: 92px;
+    & .navbar-brand {
+        display: block;
+        margin: 0 15px 0 0;
+        & img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+    & .navbar--search {
+        flex-grow: 1;
+        position: relative;
+        &--input {
+            background-color: #fff;
+            color: #ccc;
+            height: 40px;
+            width: 100%;
+            padding: 8px 0 8px 40px;
+            border-radius: 20px;
+        }
+        &--icon {
+            position: absolute;
+            font-size: 15px;
+            color: #ccc;
+            top: 13px;
+            left: 15px;
+        }
+    }
+    & .nav--control {
+        font-size: 17px;
+        margin-right: 16px;
+    }
+    & .nav-link {
+        font-family: $primary-font;
+        font-size: 14px;
+        color: $black;
+        font-weight: 600;
+        margin: 0 5px;
+    }
+    & .user {
+        @include flex(center, center);
+        &--search {
+            font-size: 15px;
+            margin-right: 40px;
+            @include media-breakpoint-down(sm) { 
+                margin-right: 20px;
+            }
+            cursor: pointer;
+        }
+        &--cart {
+            font-size: 15px;
+            margin-right: 40px;
+            @include media-breakpoint-down(sm) { 
+                margin-right: 20px;
+            }
+            cursor: pointer;
+        }
+        &--infor {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+    }
+    // Sub nav
+    & .subnavbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        background-color: #fff;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform linear 0.2s, opacity linear 0.2s;
+        &--header {
+            @include flex(center, space-between);
+            padding: 20px 0;
+            & i {
+                font-size: 16px;
+                color: $black;
+            }
+        }
+        &--hr {
+            border-top: 2px solid #A9A9A9;
+        }
+        &--menu {
+            display: flex;
+            flex-direction: column;
+            &--item {
+                font-size: 13px;
+                line-height: 34px;
+                font-weight: 400;
+                color: $black;
+            }
+        }
+    }
+    & .navbar--input {
+        display: none;
+    }
+    & .navbar--input:checked ~ .subnavbar {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}

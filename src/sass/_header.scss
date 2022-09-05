@@ -1,0 +1,68 @@
+header {
+    background-color: #020202;
+    height: 44px;
+}
+.header--wrap {
+    @include flex(center, space-between);
+    color: $white1;
+    & p{
+        display: inline-block;
+        font-weight: 600;
+        color: $white1;
+    }
+    &--left{
+        & .day {
+            color: $gray2;
+        }
+    }
+    &--center{
+        @include flex(center,center);
+        & .address {
+            color: $gray2;
+            margin-right: 8px;
+        }
+        & .contact {
+            display: inline;
+        }
+        & .contact a {
+            font-weight: 600;
+            position: relative;
+        }
+        & .contact a:hover {
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+        & .contact a::after {
+            display: block;
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            border-radius: 5px;
+            left: -5px;
+            bottom: -6px;
+            width: 76px;
+            height: 2.5px;
+        }
+        & .contact a::before {
+            display: block;
+            content: "";
+            position: absolute;
+            background-color: transparent;
+            left: -5px;
+            bottom: -5px;
+            width: 76px;
+            height: 15px;
+        }
+    }
+    &--right{
+        & a {
+            font-weight:600;
+            margin-right: 8px;
+        }
+        & .facebook-icon, .instagram-icon{
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+    }
+}

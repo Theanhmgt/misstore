@@ -1,0 +1,26 @@
+$primary-font: "Poppins", sans-serif;
+$black: #000;
+$white1: #FFF;
+$white2: #F5F7FF;
+$white3: #EBEBEB;
+$blue1: #0156FF;
+$blue2: #01A4FF;
+
+$gray1: #ACACAC;
+$gray2: #8C8C8C;
+$gray3: #C4C4C4;
+
+$green: #78A962;
+$yellow: #E9A426;
+$red: #C94D3F;
+
+$gradient: linear-gradient(180deg, #0074BE 0%, #005EAD 50.52%, #003189 100%);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

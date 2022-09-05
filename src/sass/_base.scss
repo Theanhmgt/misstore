@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $primary-font;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 auto;
+}
+
+.btn {
+    border: 2px solid $blue1;
+    color: $blue1 !important;
+    border-radius: 20px;
+    padding: 8px 15px !important;
+    line-height: unset;
+    font-weight: 600 !important;
+
+}
+
+.noreview {
+    color: $gray3 !important;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
