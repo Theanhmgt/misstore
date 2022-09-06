@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: $primary-font;
     font-size: 12px;
@@ -26,3 +25,9 @@ body {
 .overflow-hidden {
     overflow: hidden;
 }
+
+.product-type__active {
+    color: $black !important;
+    border-bottom: 3px solid $blue !important;
+}
+
