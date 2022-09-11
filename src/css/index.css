@@ -11134,39 +11134,6 @@ nav .navbar--input:checked ~ .subnavbar {
   font-weight: 600;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  line-height: 18px;
-  margin: 0 auto;
-}
-
-.btn {
-  border: 2px solid #0156FF;
-  color: #0156FF !important;
-  border-radius: 20px;
-  padding: 8px 15px !important;
-  line-height: unset;
-  font-weight: 600 !important;
-}
-
-.noreview {
-  color: #C4C4C4 !important;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.product-type__active {
-  color: #000 !important;
-  border-bottom: 3px solid #0d6efd !important;
-}
-
 .cumstom-builds {
   margin-bottom: 30px;
 }
@@ -11332,6 +11299,186 @@ body {
   font-weight: 400;
   line-height: 20px;
   text-align: center;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 47px 0 17px;
+}
+footer .footer--head {
+  margin-bottom: 45px;
+}
+@media (max-width: 767.98px) {
+  footer .footer--head__left {
+    margin-bottom: 20px;
+  }
+}
+footer .footer--head__left--heading {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 50px;
+}
+@media (max-width: 991.98px) {
+  footer .footer--head__left--heading {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767.98px) {
+  footer .footer--head__left--heading {
+    text-align: center;
+  }
+}
+footer .footer--head__left--desc {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  color: #8C8C8C;
+}
+footer .footer--head__right {
+  text-align: end;
+}
+@media (max-width: 767.98px) {
+  footer .footer--head__right {
+    text-align: center;
+  }
+}
+footer .footer--head__right--input {
+  height: 50px;
+  width: 400px;
+  padding-left: 12px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-right: 23px;
+}
+@media (max-width: 1199.98px) {
+  footer .footer--head__right--input {
+    width: 286px;
+  }
+}
+@media (max-width: 991.98px) {
+  footer .footer--head__right--input {
+    width: 186px;
+  }
+}
+@media (max-width: 767.98px) {
+  footer .footer--head__right--input {
+    width: 216px;
+    margin-bottom: 12px;
+  }
+}
+footer .footer--body__list-item {
+  text-align: left;
+}
+footer .footer--body__list-item--head {
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  footer .footer--body__list-item--head {
+    border-bottom: 2px solid #ACACAC;
+    padding-bottom: 18px;
+  }
+}
+footer .footer--body__list-item--head span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  color: #ACACAC;
+}
+@media (max-width: 991.98px) {
+  footer .footer--body__list-item--head span {
+    font-size: 22px;
+  }
+}
+footer .footer--body__list-item--head i {
+  font-size: 18px;
+  color: #ACACAC;
+}
+@media (max-width: 991.98px) {
+  footer .footer--body__list-item--contai {
+    display: none;
+  }
+  footer .footer--body__list-item--contai li {
+    margin: 10px 0;
+  }
+}
+footer .footer--body__list-item-link {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8C8C8C;
+}
+@media (max-width: 991.98px) {
+  footer .footer--body__list-item-link {
+    font-size: 18px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 2px solid #0156FF;
+  color: #0156FF !important;
+  border-radius: 20px;
+  padding: 8px 15px !important;
+  line-height: unset;
+  font-weight: 600 !important;
+}
+
+.btn2 {
+  background-color: #0156FF;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  padding: 8px 25px !important;
+  border-radius: 20px;
+}
+
+.noreview {
+  color: #C4C4C4 !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.product-type__active {
+  color: #000 !important;
+  border-bottom: 3px solid #0d6efd !important;
+}
+
+.active {
+  display: block !important;
+}
+
+.activeHeadInfor {
+  border: unset !important;
+  padding: unset !important;
+}
+
+.activeHeadInfor + ul li:last-child {
+  border-bottom: 2px solid #ACACAC;
+  padding-bottom: 18px;
+  margin-bottom: 22px;
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=index.css.map */

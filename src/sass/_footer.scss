@@ -1,0 +1,106 @@
+footer {
+    background-color: $black;
+    color: $white;
+    padding: 47px 0 17px;
+    & .footer--head {
+        margin-bottom: 45px;
+        &__left {
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+            &--heading {
+                font-size: 36px;
+                // @include media-breakpoint-down(xl) {
+                //     font-size: 26px;
+                // }
+                @include media-breakpoint-down(lg) {
+                    font-size: 26px;
+                }
+                @include media-breakpoint-down(md) {
+                    text-align: center;
+                }
+                font-weight: 500;
+                line-height: 50px;
+            }
+            &--desc {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 21px;
+                color: $gray2;
+            }
+        }
+        &__right {
+            text-align: end;
+            @include media-breakpoint-down(md) {
+                text-align: center;
+            }
+            &--input {
+                height: 50px;
+                width: 400px;
+                @include media-breakpoint-down(xl) {
+                    width: 286px;
+                }
+                @include media-breakpoint-down(lg) {
+                    width: 186px;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 216px;
+                    margin-bottom: 12px;
+                }
+                padding-left: 12px;
+                font-size: 14px;
+                color: $white;
+                background-color: $black;
+                border: 2px solid $white;
+                border-radius: 5px;
+                margin-right: 23px;
+            }
+        }
+    }
+    & .footer--body {
+        &__list-item {
+            text-align: left;
+
+            &--head {
+                margin-bottom: 22px;
+                display: flex;
+                justify-content: space-between;
+                @include media-breakpoint-down(lg) {
+                    border-bottom: 2px solid $gray1;
+                    padding-bottom: 18px;
+                }
+                & span {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 14px;
+                    color: $gray1;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 22px;
+                    }
+                }
+                & i {
+                    font-size: 18px;
+                    color: $gray1;
+                }
+            }
+
+            @include media-breakpoint-down(lg) {
+                &--contai {
+                    display: none;
+                    & li {
+                        margin: 10px 0;
+                    }
+                }
+            }
+            
+            &-link {
+                font-size: 14px;
+                font-weight: 300;
+                color: $gray2;
+                @include media-breakpoint-down(lg) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

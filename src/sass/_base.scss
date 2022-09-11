@@ -15,7 +15,16 @@ body {
     padding: 8px 15px !important;
     line-height: unset;
     font-weight: 600 !important;
-
+}
+.btn2 {
+    background-color: $blue1;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    padding: 8px 25px !important;
+    border-radius: 20px;
 }
 
 .noreview {
@@ -31,3 +40,19 @@ body {
     border-bottom: 3px solid $blue !important;
 }
 
+.active {
+    display: block !important;
+}
+
+.activeHeadInfor {
+    border: unset !important;
+    padding: unset !important;
+}
+.activeHeadInfor + ul li:last-child {
+    border-bottom: 2px solid $gray1;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+}
+.rotateArrow {
+    transform: rotate(180deg);
+}
