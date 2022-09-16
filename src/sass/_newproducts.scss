@@ -10,6 +10,8 @@
         overflow-x: scroll;
     }
     &--item {
+        position: relative;
+        padding-bottom: 20px;
         &__img {
             width: 150px;
             height: 150px;
@@ -38,7 +40,6 @@
             line-height: 20px;
             font-weight: 400;
             overflow: hidden;
-            display: block;
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
@@ -57,6 +58,57 @@
                 font-weight: 600;
                 line-height: 25px;
                 color: $black;
+            }
+        }
+        &:hover .newproducts--item--overlay {
+            display: flex;
+        }
+        &--overlay {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: -16px;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.1);
+            animation: fadeIn .2s linear;
+            // display: flex;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 16px 0 4px;
+            & .overlay__top {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                z-index: 3;
+                &--icon {
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    margin: 0 12px 5px 0;
+                    position: relative;
+                    transition: all .2s ease-in;
+                    border: 2px solid;
+                    border-radius: 50%;
+                    color: $gray2;
+                    & i {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 14px;
+                    }
+                }
+                &--icon:hover {
+                    cursor: pointer;
+                }
+            }
+            & .overlay__bottom {
+                text-align: center;
+                & i {
+                    transform: translateX(-4px);
+                }
             }
         }
     }
@@ -117,5 +169,15 @@
     }
     &__name {
         font-weight: 600;
+    }
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

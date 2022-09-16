@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:
+    wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;
+    1,500;1,600;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/fontawesome-free-6.2.0-web/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./src/css/index.css">
+    <title>MIS STORE</title>
+</head>
+<body>
+    <header>
+        <div class="container h-100">
+            <div class="header--wrap h-100">
+                <div class="header--wrap--left">
+                    <p class="day">Mon-Thu:</p>
+                    <p class="time">9:00 AM - 5:30PM</p>
+                </div>
+                <div class="header--wrap--center d-none d-lg-block">
+                    <p class="address">Visit our showroom in 1234 Street Adress City Address, 1234</p>
+                    <div class="contact">
+                        <a href="">Contact US</a>
+                    </div>
+                </div>
+                <div class="header--wrap--right">
+                    <a href="tel:+00 151515">+00 151515</a>
+                    <a href=""><i class="fa-brands fa-facebook facebook-icon"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram instagram-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container flex-nowrap" >
+          
+          <label class="nav--control d-block d-lg-none" for="subnav-input">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+
+          <input type="checkbox" class="navbar--input" id="subnav-input">
+
+          <div class="subnavbar  d-block d-lg-none">
+            <div class="container">
+
+              <div class="subnavbar--header">
+                <img src="./src/Images/logo-main.png" alt="">
+
+                <label for="subnav-input">
+                  <i class="fa-solid fa-x"></i>
+                </label>
+
+              </div>
+
+              <div class="subnavbar--hr"></div>
+              <div class="subnavbar--menu">
+                <a class="subnavbar--menu--item" aria-current="page" href="#">Laptops</a>
+                <a class="subnavbar--menu--item" href="#">Desktop PCs</a>
+                <a class="subnavbar--menu--item" href="#">Netwoking Devices</a>
+                <a class="subnavbar--menu--item" href="#">Printers & Scanners</a>
+                <a class="subnavbar--menu--item" href="#">PC Parts</a>
+                <a class="subnavbar--menu--item" href="#">All Other Products</a>
+                <a class="subnavbar--menu--item" href="#">Repairs</a>
+                <a class="subnavbar--menu--item btn " href="#">Our Deals</a>
+              </div>
+            </div>
+          </div>
+
+          <a class="navbar-brand d-none d-md-block" href="#">
+            <img src="./src/Images/logo-main.png" alt="">
+          </a>
+
+
+          <div class="d-block d-lg-none navbar--search">
+            <input class="navbar--search--input" type="text" placeholder="Search Here">
+            <i class="fa-solid fa-magnifying-glass navbar--search--icon"></i>
+          </div>
+
+          <div class="collapse navbar-collapse d-none d-lg-block">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Laptops</a>
+              <a class="nav-link" href="#">Desktop PCs</a>
+              <a class="nav-link" href="#">Netwoking Devices</a>
+              <a class="nav-link" href="#">Printers & Scanners</a>
+              <a class="nav-link" href="#">PC Parts</a>
+              <a class="nav-link" href="#">All Other Products</a>
+              <a class="nav-link" href="#">Repairs</a>
+              <a class="nav-link btn " href="#">Our Deals</a>
+            </div>
+          </div>
+
+          <div class="user">
+            <div class="user--search">
+                <i class="fa-solid fa-magnifying-glass d-none d-lg-block"></i>
+            </div>
+            <div class="user--cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="user--infor">
+                <img src="https://media.istockphoto.com/photos/girl-with-headphones-and-neon-lighting-stylized-3d-character-picture-id1330874201?b=1&k=20&m=1330874201&s=170667a&w=0&h=GL7X6kheNB4ip-Mw8B0aI3KbUfWCzRthJqCNv5qq2jg=" alt="">
+            </div>
+          </div>
+
+        </div>
+    </nav>
+
+    <main class="Shopping-Cart">
+      <div class="container">
+        <h1 class="Odered-cart__title">Shopping Cart</h1>
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+
+            <div class="Odered-cart--head d-none d-lg-block">
+              <div class="row">
+                <div class="col-2">Item</div>
+                <div class="col-4"></div>
+                <div class="col-2">Price</div>
+                <div class="col-1">Quanty</div>
+                <div class="col-2 ps-4">Subtotal</div>
+                <div class="col-1"></div>
+              </div>
+            </div>
+
+            <ul class="Odered-cart--list">
+              <li class="Odered-cart--list--item">
+                <div class="row">
+                  <div class="col-sm-2 col-3">
+                    <div class="Odered-cart--list--item--img">
+                      <img src="./src/Images/product3.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-5">
+                    <div class="Odered-cart--list--item--name">
+                      <span>
+                        MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, 
+                        Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 col-2 p-0">
+                    <div class="Odered-cart--list--item--price">$4,349.00</div>
+                  </div>
+                  <div class="col-sm-1  d-none d-md-block">
+                    <div class="Odered-cart--list--item--qty">
+                      <div class="number">1</div>
+                      <div class="change-qty">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 ps-4 d-none d-md-block">
+                    <div class="Odered-cart--list--item--subtotal">$13,047.00</div>
+                  </div>
+                  <div class="col-sm-1 col-2">
+                    <div class="Odered-cart--list--item--control">
+                      <div class="Item--control__icon"><i class="fa-solid fa-xmark"></i></div>
+                      <div class="Item--control__icon"><i class="fa-solid fa-pen"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="Odered-cart--list--item">
+                <div class="row">
+                  <div class="col-sm-2 col-3">
+                    <div class="Odered-cart--list--item--img">
+                      <img src="./src/Images/product3.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-5">
+                    <div class="Odered-cart--list--item--name">
+                      <span>
+                        MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, 
+                        Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 col-2 p-0">
+                    <div class="Odered-cart--list--item--price">$4,349.00</div>
+                  </div>
+                  <div class="col-sm-1  d-none d-md-block">
+                    <div class="Odered-cart--list--item--qty">
+                      <div class="number">1</div>
+                      <div class="change-qty">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 ps-4 d-none d-md-block">
+                    <div class="Odered-cart--list--item--subtotal">$13,047.00</div>
+                  </div>
+                  <div class="col-sm-1 col-2">
+                    <div class="Odered-cart--list--item--control">
+                      <div class="Item--control__icon"><i class="fa-solid fa-xmark"></i></div>
+                      <div class="Item--control__icon"><i class="fa-solid fa-pen"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="Odered-cart--list--item">
+                <div class="row">
+                  <div class="col-sm-2 col-3">
+                    <div class="Odered-cart--list--item--img">
+                      <img src="./src/Images/product3.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-5">
+                    <div class="Odered-cart--list--item--name">
+                      <span>
+                        MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 SUPER, 32GB RAM, 1TB SSD, 
+                        Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 col-2 p-0">
+                    <div class="Odered-cart--list--item--price">$4,349.00</div>
+                  </div>
+                  <div class="col-sm-1  d-none d-md-block">
+                    <div class="Odered-cart--list--item--qty">
+                      <div class="number">1</div>
+                      <div class="change-qty">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-2 ps-4 d-none d-md-block">
+                    <div class="Odered-cart--list--item--subtotal">$13,047.00</div>
+                  </div>
+                  <div class="col-sm-1 col-2">
+                    <div class="Odered-cart--list--item--control">
+                      <div class="Item--control__icon"><i class="fa-solid fa-xmark"></i></div>
+                      <div class="Item--control__icon"><i class="fa-solid fa-pen"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="Odered-cart--footer">
+              <div class="Odered-cart--footer--btn btn-black-white ms-">Continue Shopping</div>
+              <div class="Odered-cart--footer--btn btn-white-black">Clear Shopping Cart</div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="Shopping-Cart--checkout">
+              <h1 class="checkout__heading">Summary</h1>
+              <ul class="checkout__price--menu">
+                <li>
+                  <h2>Subtotal</h2>
+                  <span>$13,047.00</span>
+                </li>
+                <li>
+                  <h2>Shipping</h2>
+                  <span>$21.00</span>
+                </li>
+                <li class="shipping-title">
+                  (Standard Rate - Price may vary depending on the item/destination. TECS Staff will contact you.)
+                </li>
+                <li>
+                  <h2>Tax</h2>
+                  <span>$1.91</span>
+                </li>
+                <li>
+                  <h2>Order Total</h2>
+                  <span>$13,068.00</span>
+                </li>
+              </ul>
+              <div class="checkout__btn btn2">Proceed to Checkout</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- features -->
+    <section>
+      <div class="feature--list">
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <a href="" class="feature--item">
+              <div class="feature--item--header">
+                <i class="fa-sharp fa-solid fa-headphones-simple feature--item--header__icon"></i>
+              </div>
+              <p class="feature--item--name">Product Support</p>
+              <p class="feature--item--desc">Up to 3 years on-site warranty available for your peace of mind.</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <a href="" class="feature--item">
+              <div class="feature--item--header">
+                <i class="fa-solid fa-user-shield feature--item--header__icon"></i>
+              </div>
+              <p class="feature--item--name">Personal Account</p>
+              <p class="feature--item--desc">With big discounts, free delivery and a dedicated support specialist.</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <a href="" class="feature--item">
+              <div class="feature--item--header">
+                <i class="fa-solid fa-tags feature--item--header__icon"></i>
+              </div>
+              <p class="feature--item--name">Amazing Savings</p>
+              <p class="feature--item--desc">Up to 70% off new Products, you can be sure of the best price.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <!-- Footer head -->
+        <div class="footer--head">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="footer--head__left">
+                <div class="footer--head__left--heading">Sign Up To Our Newsletter.</div>
+                <div class="footer--head__left--desc">Be the first to hear about the latest offers.</div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <div class="footer--head__right">
+                <input type="text" placeholder="Your Email" class="footer--head__right--input">
+                <button class="footer--head__right--subcribe btn2">Subcribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer body -->
+        <div class="footer--body">
+
+          <div class="footer--body__list">
+            <div class="row">
+              <div class="col-lg-2 col-md-12">
+                <div class="footer--body__list-item">
+                  <div class="footer--body__list-item--head">
+                    <span>Information</span>
+                    <i class="fa-solid fa-caret-down d-block d-lg-none"></i>
+                  </div>
+                  <ul class="footer--body__list-item--contai">
+                    <li><a href="" class="footer--body__list-item-link">About Us</a></li>
+                    <li><a href="" class="footer--body__list-item-link">About Zip</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Privacy Policy</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Search Terms</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Orders and Returns</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Contact Us</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Advanced Search Newsletter</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12">
+                <div class="footer--body__list-item">
+                  <div class="footer--body__list-item--head">
+                    <span>PC Parts </span>
+                    <i class="fa-solid fa-caret-down d-block d-lg-none"></i>
+                  </div>
+                  <ul class="footer--body__list-item--contai">
+                    <li><a href="" class="footer--body__list-item-link">CPUS</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Add On Cards</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Hard Drives (Internal)</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Graphic Cards</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Keyboards / Mice</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Cases / Power Supplies / Cooling</a></li>
+                    <li><a href="" class="footer--body__list-item-link">RAM (Memory)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12">
+                <div class="footer--body__list-item">
+                  <div class="footer--body__list-item--head">
+                    <span>Desktop PCs</span>
+                    <i class="fa-solid fa-caret-down d-block d-lg-none"></i>
+                  </div>
+                  <ul class="footer--body__list-item--contai">
+                    <li><a href="" class="footer--body__list-item-link">Custom PCs</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Servers</a></li>
+                    <li><a href="" class="footer--body__list-item-link">MSI All-In-One PCs</a></li>
+                    <li><a href="" class="footer--body__list-item-link">HP/Compaq PCs</a></li>
+                    <li><a href="" class="footer--body__list-item-link">ASUS PCs</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Tecs PCs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12">
+                <div class="footer--body__list-item">
+                  <div class="footer--body__list-item--head">
+                    <span>Laptops</span>
+                    <i class="fa-solid fa-caret-down d-block d-lg-none"></i>
+                  </div>
+                  <ul class="footer--body__list-item--contai">
+                    <li><a href="" class="footer--body__list-item-link">Evryday Use Notebooks</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Servers</a></li>
+                    <li><a href="" class="footer--body__list-item-link">MSI Workstation Series</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Tablets and Pads</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Netbooks</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Infinity Gaming Notebooks</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-12">
+                <div class="footer--body__list-item">
+                  <div class="footer--body__list-item--head">
+                    <span>Address</span>
+                    <i class="fa-solid fa-caret-down d-block d-lg-none"></i>
+                  </div>
+                  <ul class="footer--body__list-item--contai">
+                    <li><a href="" class="footer--body__list-item-link">Address: 305 La Trobe St, Melbourne 3000</a></li>
+                    <li><a style="color:blue;" href="tel:+00 1234 5678" class="footer--body__list-item-link">Phones: (00) 1234 5678</a></li>
+                    <li><a href="" class="footer--body__list-item-link">We are open: Monday-Thursday: 9:00 AM - 5:30 PM</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Friday: 9:00 AM - 6:00 PM</a></li>
+                    <li><a href="" class="footer--body__list-item-link">Saturday: 11:00 AM - 5:00 PM</a></li>
+                    <li><a style="color:blue;" href="mailto:theanhmgt66@mail.com" class="footer--body__list-item-link">E-mail: theanhmgt66@gmail.com</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+    <script>
+      const $ = document.querySelector.bind(document)
+      const $$ = document.querySelectorAll.bind(document)
+
+      $('.user--cart').onclick = ()=> {
+        window.location.href = "./ShoppingCart.html";
+      }
+
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        // footer
+        $$('.footer--body__list-item--head').forEach(element => {
+          element.onclick = function() {
+            this.nextElementSibling.classList.toggle("active")
+
+            console.log('test')
+            this.classList.toggle("activeHeadInfor")
+
+            this.lastElementChild.classList.toggle("rotateArrow")
+          }
+        });
+
+      } else {
+        // search
+        $('.user--search').onclick = function() {
+          $('.navbar-collapse.d-none.d-lg-block').remove();
+          $('.navbar--search').classList.remove('d-block')
+          $('.navbar--search').classList.remove('d-lg-none')
+          this.style.visibility = "hidden";
+        }
+      }
+    </script>
+</body>
+</html>
